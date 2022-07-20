@@ -1,16 +1,20 @@
-#include <stdio.h>
+#include "main.h"
 /**
- * _puts_recursion - Prints string followed by new line
- * @s: Pointer to String
- * Return: Void
+ *_puts_recursion - prints a string
+ *@s: pointer block of memory to fill
+ *Return: void
  */
+
 void _puts_recursion(char *s)
+
 {
-	if (*s != '\0')
-	{
-		putchar(*s);
-		_puts_recursion(s + 1);
-	}
-	else
-		putchar('\n');
+if (*s == '\0')
+{
+_putchar('\n');
+return;
+}
+
+_putchar (*s);
+_puts_recursion(s + 1);
+
 }
